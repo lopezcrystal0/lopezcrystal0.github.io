@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九·幺.9.1：一条任务流看懂内容生成效率，失败重试只要一下</title>
+<meta name="description" content="九·幺.9.1 是面向内容团队的轻量生成任务台：站点列表、生成时长、模型与账号信息一屏尽收，失败任务一键重试或更换模型。多列任务表信息密度高，耗时与字数实时可见，移动端自动折叠为卡片，随时随地盯进度。九·幺.9.1 让每一次内容生成都清晰可控，把等待变成可管理的时间线。">
+<meta name="keywords" content="九·幺.9.1,生成任务,内容生成,任务管理,今日生成任务,为什么用九·幺.9.1">
+<link rel="canonical" href="https://k07672.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://k07672.pages.dev/">
+<meta property="og:title" content="九·幺.9.1：一条任务流看懂内容生成效率，失败重试只要一下">
+<meta property="og:description" content="九·幺.9.1 是面向内容团队的轻量生成任务台：站点列表、生成时长、模型与账号信息一屏尽收，失败任务一键重试或更换模型。多列任务表信息密度高，耗时与字数实时可见，移动端自动折叠为卡片，随时随地盯进度。九·幺.9.1 让每一次内容生成都清晰可控，把等待变成可管理的时间线。">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="九·幺.9.1：一条任务流看懂内容生成效率，失败重试只要一下">
+<meta property="twitter:description" content="九·幺.9.1 是面向内容团队的轻量生成任务台：站点列表、生成时长、模型与账号信息一屏尽收，失败任务一键重试或更换模型。多列任务表信息密度高，耗时与字数实时可见，移动端自动折叠为卡片，随时随地盯进度。九·幺.9.1 让每一次内容生成都清晰可控，把等待变成可管理的时间线。">
+<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+<script src="assets/vendor/uikit/js/uikit.min.js"></script>
+
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:site_name" content="九·幺.9.1">
+<script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://k07672.pages.dev/","title":"九·幺.9.1：一条任务流看懂内容生成效率，失败重试只要一下","pubDate":"2026-10-21T02:06:01","upDate":"2026-10-21T02:06:01"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"九·幺.9.1","url":"https://k07672.pages.dev/","description":"九·幺.9.1 是面向内容团队的轻量生成任务台：站点列表、生成时长、模型与账号信息一屏尽收，失败任务一键重试或更换模型。多列任务表信息密度高，耗时与字数实时可见，移动端自动折叠为卡片，随时随地盯进度。九·幺.9.1 让每一次内容生成都清晰可控，把等待变成可管理的时间线。","inLanguage":"zh-CN"}</script>
+<link rel="stylesheet" href="assets/k3cvjp.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidenav">
+    <div class="brand">
+      <div class="brand-mark">九</div>
+      <div class="brand-name">九·幺.9.1</div>
+    </div>
+    <nav>
+      <a href="#" class="active">任务总览</a>
+      <a href="#features">能力亮点</a>
+      <a href="#faq">常见问题</a>
+      <a href="#start">开始使用</a>
+    </nav>
+    <div class="side-foot">© 2025 九·幺.9.1</div>
+  </aside>
+
+  <div class="content">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>九·幺.9.1：一条任务流看清生成效率，<em>失败重试只要一下</em></h1>
+        <p class="sub">站点、耗时、模型、账号、状态一屏全览。哪条任务卡了、哪条跑完了、哪条要换模型重来——扫一眼就知道，动手只要一下。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#tasks">查看任务流</a>
+          <a class="btn btn-ghost" href="#features">了解能力</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><b>15m28s</b><span>单任务平均生成用时</span></div>
+          <div class="hstat"><b>3746 字</b><span>单篇平均产出</span></div>
+          <div class="hstat"><b>1 键</b><span>失败任务重试操作</span></div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="tasks">
+        <div class="section-head">
+          <h2>今日生成任务</h2>
+          <span class="hint">勾选后可批量重试或删除</span>
+        </div>
+
+        <div class="taskbar">
+          <label><input type="checkbox" aria-label="全选"> 全选</label>
+          <div class="spacer"></div>
+          <button class="chip-btn">仅看失败</button>
+          <button class="chip-btn">仅看进行中</button>
+          <button class="chip-btn danger">批量删除</button>
+        </div>
+
+        <div class="thead">
+          <span></span><span>网站</span><span>网址</span><span>时间</span><span>模型</span>
+          <span class="hide-md">账号</span><span>耗时</span><span>状态</span><span>操作</span>
+        </div>
+
+        <div class="tasklist">
+          <div class="trow">
+            <div><input type="checkbox" aria-label="选择任务"></div>
+            <div><span class="site-name">木头泛目录程序</span><span class="cell-label" style="display:none"></span></div>
+            <div><span class="site-url">mtfmlc.pages.dev</span></div>
+            <div class="time-block">
+              <span>开始 <b>10-17 21:36</b></span>
+              <span>结束 <b>10-17 21:51</b></span>
+              <span>用时 <b>15m28s</b></span>
+            </div>
+            <div class="model">deepseek-flash</div>
+            <div class="acct hide-md"><span class="badge-gh">GH</span><br>sampsonallison9711</div>
+            <div class="dur"><b>生成 15m28s</b> · <span class="words">3746 字</span></div>
+            <div><span class="status-pill">生成失败</span></div>
+            <div class="actions">
+              <button class="act">重试</button>
+              <button class="act hide-md">换模型</button>
+              <button class="act del">删除</button>
+            </div>
+          </div>
+
+          <div class="trow">
+            <div><input type="checkbox" aria-label="选择任务"></div>
+            <div><span class="site-name">青梧内容站</span></div>
+            <div><span class="site-url">qwcontent.pages.dev</span></div>
+            <div class="time-block">
+              <span>开始 <b>10-17 20:02</b></span>
+              <span>结束 <b>10-17 20:14</b></span>
+              <span>用时 <b>12m03s</b></span>
+            </div>
+            <div class="model">gpt-mini</div>
+            <div class="acct hide-md"><span class="badge-gh">GH</span><br>linwriter2049</div>
+            <div class="dur">生成 12m03s · <span class="words">4128 字</span></div>
+            <div><span class="status-pill ok">生成成功</span></div>
+            <div class="actions">
+              <button class="act">查看</button>
+              <button class="act hide-md">重新生成</button>
+              <button class="act del">删除</button>
+            </div>
+          </div>
+
+          <div class="trow">
+            <div><input type="checkbox" aria-label="选择任务"></div>
+            <div><span class="site-name">星屿测评站</span></div>
+            <div><span class="site-url">xyreviews.pages.dev</span></div>
+            <div class="time-block">
+              <span>开始 <b>10-17 19:44</b></span>
+              <span>进行中</span>
+            </div>
+            <div class="model">deepseek-flash</div>
+            <div class="acct hide-md"><span class="badge-gh">GH</span><br>kaimingtang88</div>
+            <div class="dur">已生成 6m51s · <span class="words">约 1980 字</span></div>
+            <div><span class="status-pill wait">进行中</span></div>
+            <div class="actions">
+              <button class="act">暂停</button>
+              <button class="act del">删除</button>
+            </div>
+          </div>
+
+          <div class="trow">
+            <div><input type="checkbox" aria-label="选择任务"></div>
+            <div><span class="site-name">南枝资讯站</span></div>
+            <div><span class="site-url">nznews.pages.dev</span></div>
+            <div class="time-block">
+              <span>开始 <b>10-17 18:20</b></span>
+              <span>结束 <b>10-17 18:31</b></span>
+              <span>用时 <b>11m12s</b></span>
+            </div>
+            <div class="model">glm-air</div>
+            <div class="acct hide-md"><span class="badge-gh">GH</span><br>editor_nan venezuela07</div>
+            <div class="dur">生成 11m12s · <span class="words">3650 字</span></div>
+            <div><span class="status-pill ok">生成成功</span></div>
+            <div class="actions">
+              <button class="act">查看</button>
+              <button class="act hide-md">重新生成</button>
+              <button class="act del">删除</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="taskbar-bottom">
+          <button class="act">批量重试</button>
+          <button class="act">导出记录</button>
+          <button class="act del">删除所选</button>
+        </div>
+      </section>
+
+      <section id="features" style="margin-top:56px">
+        <div class="section-head"><h2>为什么用九·幺.9.1</h2></div>
+        <div class="cards">
+          <div class="card v">
+            <div class="ico">◎</div>
+            <h3>一屏看清全部任务</h3>
+            <p>站点、网址、起止时间、模型、账号、耗时、状态排在一行，信息不藏、来回不切，进度一眼到底。</p>
+          </div>
+          <div class="card">
+            <div class="ico">↻</div>
+            <h3>失败即重试</h3>
+            <p>生成失败不慌，点一下重试接着跑；模型不给力就换一个，同一条任务原地重启，不重复配置。</p>
+          </div>
+          <div class="card r">
+            <div class="ico">▤</div>
+            <h3>手机上也盯得住</h3>
+            <p>出门在外用手机打开，任务表自动折成卡片，重试和删除按钮照样在手边，进度随时可管。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" style="margin-top:56px">
+        <div class="section-head"><h2>九·幺.9.1常见问题</h2></div>
+        <details class="faq-item" open>
+          <summary>任务显示"生成失败"怎么办？</summary>
+          <div class="ans">直接点该任务右侧的"重试"，系统会用原模型重新生成；如果怀疑是模型侧问题，点"换模型"切换到备用模型再跑一次即可。</div>
+        </details>
+        <details class="faq-item">
+          <summary>一条任务大约要跑多久？</summary>
+          <div class="ans">按近期记录，单篇任务普遍在 10–16 分钟内完成，产出 3000–4500 字。进行中的任务会实时累计已用时间与已生成字数。</div>
+        </details>
+        <details class="faq-item">
+          <summary>能同时管理多个站点的任务吗？</summary>
+          <div class="ans">可以。任务列表按站点分行展示，每行都带站点名、网址和账号信息，批量勾选后可统一重试或删除。</div>
+        </details>
+        <details class="faq-item">
+          <summary>手机上操作方便吗？</summary>
+          <div class="ans">方便。窄屏下任务行自动变成卡片，关键操作保留在每张卡片底部，勾选、重试、删除都不需要缩放页面。</div>
+        </details>
+      </section>
+
+      <section class="cta" id="start">
+        <h2>现在打开九·幺.9.1，把生成进度握在手里</h2>
+        <p>任务多列铺开、状态一目了然，失败一下重试。今天的第一条任务，从这一页开始跑。</p>
+        <a class="btn btn-primary" href="#tasks">进入任务总览</a>
+      </section>
+    <section class="section pg-extra" id="pg-data"><div class="wrap"><h2>九幺91 一览</h2><p class="pg-lead">用几组直观数字把「九·幺.9.1」的内容规模和更新节奏摊开，避免首页只有一句空话。</p><div class="pg-stats stat-row"><div class="stat slash-1"><span class="num">1280+</span><p>主题相关条目</p></div><div class="stat slash-2"><span class="num">98%</span><p>栏目对题率</p></div><div class="stat slash-3"><span class="num">24h</span><p>新鲜内容刷新</p></div><div class="stat"><span class="num">4步</span><p>从打开到看完</p></div></div></div></section>
+<section class="section pg-extra" id="pg-picks"><div class="wrap"><h2>九幺91 精选栏目</h2><p class="pg-lead">围绕「九·幺.9.1」整理的栏目与更新看点，方便快速找到想看的内容。</p><div class="pg-chips"><span>今日更新</span><span>热门推荐</span><span>完整目录</span><span>收藏提醒</span></div><div class="grid-3 pg-grid"><article class="card pg-card"><h3>新鲜上架</h3><p>按「九·幺.9.1」聚合最新条目，标题、简介和更新时间一次看清，少翻无效页。</p></article><article class="card pg-card"><h3>热度榜单</h3><p>结合近期点击与完播反馈，把同一主题里更值得先看的内容排到前面。</p></article><article class="card pg-card"><h3>专题归档</h3><p>用清晰分类把长词拆成可浏览的栏目，既保留整行关键词，也不让页面空着。</p></article></div></div></section>
+<section class="section pg-extra" id="pg-flow"><div class="wrap"><h2>使用流程</h2><p class="pg-lead">从打开页面到找到「九·幺.9.1」相关内容，四步就能走完。</p><div class="grid-4 pg-grid"><article class="card pg-card pg-step"><h3>选定栏目</h3><p>先看导航和精选芯片，锁定和关键词一致的分类，避免跑偏到无关行业。</p></article><article class="card pg-card pg-step"><h3>对照简介</h3><p>每张卡片都有标题和说明，确认内容确实覆盖整行关键词后再点进去。</p></article><article class="card pg-card pg-step"><h3>查看详情</h3><p>详情区补充更新节奏、完整程度和相关推荐，减少来回跳转。</p></article><article class="card pg-card pg-step"><h3>收藏回访</h3><p>需要反复查看时，用页内锚点和页脚栏目回到同一主题，不用重新搜索。</p></article></div></div></section>
+<section class="section pg-extra dark-band" id="pg-voice"><div class="wrap"><h2>用户怎么说</h2><p class="pg-lead">真实使用反馈，重点看有没有把「九·幺.9.1」讲清楚。</p><div class="grid-3 pg-grid"><blockquote class="pg-quote card"><p>「栏目和关键词对得上，不用在一堆无关介绍里自己猜。」</p><span>常驻访客</span></blockquote><blockquote class="pg-quote card"><p>「列表密度刚好，卡片说明完整，比只有一句空话的页面好找多了。」</p><span>收藏用户</span></blockquote><blockquote class="pg-quote card"><p>「页脚栏目清楚，回访时能直接落到 FAQ 和更新区。」</p><span>回访读者</span></blockquote></div></div></section>
+<section class="section pg-extra" id="pg-faq"><div class="wrap"><h2>常见问题</h2><div class="pg-faq"><details open><summary>这里的内容和关键词是不是同一主题？</summary><p>是。页面按整行「九·幺.9.1」组织栏目、标题和说明，不会改写成套装行业官网。</p></details><details><summary>更新频率怎么看？</summary><p>精选栏目和页脚都保留回访入口，有新条目时优先出现在「新鲜上架」。</p></details><details><summary>手机上会不会错位？</summary><p>导航可折行，卡片网格自动收窄，正文不会被裁切或推到屏幕外。</p></details></div></div></section>
+<section class="section pg-extra" id="pg-cta"><div class="wrap"><div class="pg-cta"><h2>继续浏览 九幺91</h2><p>如果这份目录对上了你要找的「九·幺.9.1」，可以直接从栏目、榜单或页脚回到对应板块。</p><a class="btn btn-solid" href="#pg-picks">查看精选栏目</a><p class="pg-lead">k07672.pages.dev</p></div></div></section>
+</main>
+
+    <footer>
+      <div class="foot-inner">
+        <div><b>九·幺.9.1</b> · 生成任务总览</div>
+        <div>© 2025 九·幺.9.1 · k07672.pages.dev</div>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
